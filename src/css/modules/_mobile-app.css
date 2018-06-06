@@ -1,0 +1,21 @@
+.mobile-app {
+  height: 271px;
+  background-color: #1d2631;
+  &__download {
+    padding-top: 28px;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 36px 58px 0 58px;
+  }
+  &__description {
+    color: white;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    font-size: 14px;
+    font-weight: 300;
+    width: 289px;
+    line-height: 23px;
+  }
+}

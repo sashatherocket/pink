@@ -1,0 +1,10 @@
+.intro {
+  height: 395px;
+  background-image: url(img/bg-back-mobile@1x.jpg);
+  position: relative;
+  &__image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,26 @@
+.primary-nav {
+  text-transform: uppercase;
+  background-color: $mainBlue;
+  color: white;
+  &__logo {
+    height: 69px;
+    border-bottom: 1px solid black;
+    &__image {
+      margin: 21px;
+    }
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    &__item {
+      text-align: center;
+      height: 62px;
+      line-height: 62px;
+      font-weight: 1000;
+      border-top: 1px solid #485461;
+      border-bottom: 1px solid black;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}
