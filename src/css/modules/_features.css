@@ -1,0 +1,34 @@
+  .features {
+    background-color: $mainGray;
+    text-align: center;
+    &__item {
+      &__title {
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 33px;
+        &--first {
+          margin: 0;
+          padding-top: 53px;
+        }
+      }
+      &__text {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        width: 260px;
+        margin-top: 13px;
+        line-height: 23px;
+        &--b-padding {
+          padding-bottom: 43px;
+        }
+      }
+    }
+    &::after {
+      content: "";
+      height: 277px;
+      display: block;
+      background-image: url("img/iphone-screen-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+    }
+  }

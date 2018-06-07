@@ -1,5 +1,4 @@
 .offer {
-  height: 217px;
   color: $mainBlue;
   position: relative;
   &__text {
@@ -10,7 +9,8 @@
     margin-bottom: 0;
 
     &--t-margin-small {
-      margin-top: 27px;
+      margin-top: 25px;
+      padding-bottom: 60px;
     }
   }
   &::after {
