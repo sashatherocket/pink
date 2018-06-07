@@ -8,4 +8,6 @@
 @import "modules/_site-header";
 @import "modules/_offer";
 @import "modules/_features";
-@import "modules/_slider";
+@import "modules/_testimonials";
+@import "modules/_price";
+@import "modules/_contacts";

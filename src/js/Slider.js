@@ -15,28 +15,28 @@ class Slider {
     this.bullet3.click(this.showSlide3.bind(this));
   }
   showSlide1() {
-    this.bullet1.addClass("slider__controls__item__active");
-    this.bullet2.removeClass("slider__controls__item__active");
-    this.bullet3.removeClass("slider__controls__item__active");
-    this.slide1.addClass("slider__slides__item__active");
-    this.slide2.removeClass("slider__slides__item__active");
-    this.slide3.removeClass("slider__slides__item__active");
+    this.bullet1.addClass("testimonials__slider__controls__item__active");
+    this.bullet2.removeClass("testimonials__slider__controls__item__active");
+    this.bullet3.removeClass("testimonials__slider__controls__item__active");
+    this.slide1.addClass("testimonials__slider__slides__item__active");
+    this.slide2.removeClass("testimonials__slider__slides__item__active");
+    this.slide3.removeClass("testimonials__slider__slides__item__active");
   }
   showSlide2() {
-    this.bullet1.removeClass("slider__controls__item__active");
-    this.bullet2.addClass("slider__controls__item__active");
-    this.bullet3.removeClass("slider__controls__item__active");
-    this.slide1.removeClass("slider__slides__item__active");
-    this.slide2.addClass("slider__slides__item__active");
-    this.slide3.removeClass("slider__slides__item__active");
+    this.bullet1.removeClass("testimonials__slider__controls__item__active");
+    this.bullet2.addClass("testimonials__slider__controls__item__active");
+    this.bullet3.removeClass("testimonials__slider__controls__item__active");
+    this.slide1.removeClass("testimonials__slider__slides__item__active");
+    this.slide2.addClass("testimonials__slider__slides__item__active");
+    this.slide3.removeClass("testimonials__slider__slides__item__active");
   }
   showSlide3() {
-    this.bullet1.removeClass("slider__controls__item__active");
-    this.bullet2.removeClass("slider__controls__item__active");
-    this.bullet3.addClass("slider__controls__item__active");
-    this.slide1.removeClass("slider__slides__item__active");
-    this.slide2.removeClass("slider__slides__item__active");
-    this.slide3.addClass("slider__slides__item__active");
+    this.bullet1.removeClass("testimonials__slider__controls__item__active");
+    this.bullet2.removeClass("testimonials__slider__controls__item__active");
+    this.bullet3.addClass("testimonials__slider__controls__item__active");
+    this.slide1.removeClass("testimonials__slider__slides__item__active");
+    this.slide2.removeClass("testimonials__slider__slides__item__active");
+    this.slide3.addClass("testimonials__slider__slides__item__active");
   }
 }
 export default Slider;
