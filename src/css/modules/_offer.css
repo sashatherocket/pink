@@ -1,0 +1,25 @@
+.offer {
+  height: 217px;
+  color: $mainBlue;
+  position: relative;
+  &__text {
+    text-align: center;
+    font-size: 23px;
+    margin-top: 40px;
+    line-height: 30px;
+    margin-bottom: 0;
+
+    &--t-margin-small {
+      margin-top: 27px;
+    }
+  }
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    border-right: 100vw solid $mainGray;
+    border-top: 8vw solid transparent;
+    z-index: -1;
+  }
+}
