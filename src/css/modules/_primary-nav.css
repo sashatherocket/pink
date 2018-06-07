@@ -1,13 +1,16 @@
 .primary-nav {
-  text-transform: uppercase;
-  background-color: $mainBlue;
-  color: white;
-  &__logo {
-    height: 69px;
-    border-bottom: 1px solid black;
-    &__image {
-      margin: 21px;
-    }
+  width: 100%;
+  height: 0px;
+  transition: all .3s ease-out;
+  &--opened {
+    position: absolute;
+    height: auto;
+    top: 67px;
+    left: 0;
+    z-index: 2;
+    text-transform: uppercase;
+    background-color: $mainBlue;
+    color: white;
   }
   &__list {
     padding: 0;

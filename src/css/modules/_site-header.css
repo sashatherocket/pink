@@ -1,0 +1,74 @@
+.site-header {
+  position: relative;
+  &__title {
+    height: 66px;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+    &--opened {
+      background-color: $mainBlue;
+      position: absolute;
+      border-bottom: 1px solid black;
+    }
+    &__logo {
+      margin: 22px;
+    }
+    &__menu-icon {
+      position: absolute;
+      width: 50px;
+      height: 24px;
+      top: 21px;
+      right: 20px;
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        width: 50px;
+        height: 4px;
+        background-color: white;
+        top: 0;
+        right: 0;
+      }
+      &__middle {
+        position: absolute;
+        z-index: 2;
+        width: 50px;
+        height: 4px;
+        background-color: white;
+        top: 10px;
+        right: 0;
+        transition: all .3s ease-out;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        width: 50px;
+        height: 4px;
+        background-color: white;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    &__menu-icon--close-x {
+      transform: translateX(10px);
+      transition: transform .3s ease-out;
+      &::before {
+        transform: rotate(45deg) translateY(14px);
+        transition: transform .3s ease-out;
+      }
+      .site-header__title__menu-icon__middle {
+        opacity: 0;
+        transform: scaleX(0);
+      }
+      &::after {
+        transform: rotate(-45deg) translateY(-14px);
+        transition: transform .3s ease-out;
+      }
+    }
+  }
+}
