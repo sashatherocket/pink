@@ -9,6 +9,7 @@ class Slider {
     this.slide3 = $("#slide-3");
     this.current = 1;
     this.events();
+    setTimeout(this.showNext.bind(this), 5000);
   }
   events() {
     this.bullet1.click(this.showSlide1.bind(this));
@@ -62,5 +63,12 @@ class Slider {
     }, 700);
     this.slide3.addClass("testimonials__slider__slides__item--right-in");
   }
+  showNext() {
+    if (this.current == 1) (this.showSlide2.bind(this))();
+    else if (this.current == 2) (this.showSlide3.bind(this))();
+    else if (this.current == 3) (this.showSlide1.bind(this))();
+    setTimeout(this.showNext.bind(this), 5000);
+  }
+
 }
 export default Slider;
