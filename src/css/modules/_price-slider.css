@@ -7,23 +7,21 @@
   position: relative;
   overflow: hidden;
   &__content {
-    width: 830px;
+    width: 255%;
     margin: 0 auto;
     position: relative;
-    left: -252px;
+    left: -77%;
     transition: left .7s linear;
     &__item {
       text-transform: uppercase;
-      width: 270px;
+      width: 32.9%;
       display: inline-block;
       &__header {
         color: white;
         background-color: $mainBlue;
-        width: 276px;
         height: 98px;
         text-align: center;
-        border-left: 1px solid $mainGray;
-        border-right: 1px solid $mainGray;
+
         &__title {
           padding-top: 20px;
           font-weight: 700;
@@ -36,12 +34,11 @@
       }
       &__line {
         height: 59px;
-        width: 276px;
         background-image: url(img/icon-included.svg);
         background-repeat: no-repeat;
         background-position: 90% 50%;
         background-color: white;
-        border: 1px solid $mainGray;
+        border-bottom: 3px solid $mainGray;
         &--not-included {
           background-image: url(img/icon-not-included.svg);
         }

@@ -17,19 +17,19 @@ class PriceSlider {
     this.bullet1.addClass("price-slider__controls__item--active");
     this.bullet2.removeClass("price-slider__controls__item--active");
     this.bullet3.removeClass("price-slider__controls__item--active");
-    this.sliderContent.css("left", "22px");
+    this.sliderContent.css("left", "8%");
   }
   showSlide2() {
     this.bullet1.removeClass("price-slider__controls__item--active");
     this.bullet2.addClass("price-slider__controls__item--active");
     this.bullet3.removeClass("price-slider__controls__item--active");
-    this.sliderContent.css("left", "-252px");
+    this.sliderContent.css("left", "-77%");
   }
   showSlide3() {
     this.bullet1.removeClass("price-slider__controls__item--active");
     this.bullet2.removeClass("price-slider__controls__item--active");
     this.bullet3.addClass("price-slider__controls__item--active");
-    this.sliderContent.css("left", "-527px");
+    this.sliderContent.css("left", "-162%");
   }
 }
 export default PriceSlider;
