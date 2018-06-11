@@ -1,6 +1,25 @@
 .mobile-app {
   height: 271px;
   background-color: #1d2631;
+  @mixin atMedium {
+    width: 340px;
+    position: absolute;
+    top: 350px;
+    background-color: inherit;
+  }
+  &__title {
+    display: none;
+    @mixin atMedium {
+      display: block;
+      color: white;
+      font-size: 40px;
+      font-weight: 300;
+      text-align: center;
+      width: 220px;
+      line-height: 50px;
+      margin: -150px auto 0 auto;
+    }
+  }
   &__download {
     padding-top: 28px;
   }
@@ -8,6 +27,9 @@
     display: flex;
     justify-content: space-between;
     margin: 36px 58px 0 58px;
+    @mixin atMedium {
+      margin: 48px 70px 0;
+    }
   }
   &__description {
     color: white;
@@ -17,5 +39,10 @@
     font-weight: 300;
     width: 289px;
     line-height: 23px;
+    @mixin atMedium {
+      width: 300px;
+      font-size: 18px;
+      margin: 37px auto 0;
+    }
   }
 }

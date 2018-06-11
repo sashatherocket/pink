@@ -9,6 +9,9 @@
     top: 0;
     left: 0;
     transition: all .3s;
+    @mixin atMedium {
+      height: 110px;
+    }
     &--opened {
       background-color: $mainBlue;
       position: absolute;
@@ -16,6 +19,10 @@
     }
     &__logo {
       margin: 22px;
+      @mixin atMedium {
+        margin-left: 20px;
+        margin-top: 28px;
+      }
     }
     &__menu-icon {
       position: absolute;
@@ -23,6 +30,9 @@
       height: 24px;
       top: 21px;
       right: 20px;
+      @mixin atMedium {
+        top: 45px;
+      }
       &::before {
         content: "";
         position: absolute;

@@ -2,9 +2,13 @@
   height: 462px;
   background-image: url(img/bg-back-mobile@1x.jpg);
   position: relative;
+  @mixin atMedium {
+    height: 729px;
+  }
   &__image {
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 100%
   }
 }

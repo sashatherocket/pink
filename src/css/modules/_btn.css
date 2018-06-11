@@ -10,4 +10,7 @@
   font-weight: 700;
   text-align: center;
   margin: 0 auto;
+  @mixin atMedium {
+    width: 294px;
+  }
 }
