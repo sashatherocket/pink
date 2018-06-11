@@ -1,16 +1,30 @@
 .offer {
   color: $mainBlue;
   position: relative;
+  @mixin atMedium {
+    height: 244px;
+  }
   &__text {
     text-align: center;
     font-size: 23px;
     margin-top: 40px;
     line-height: 30px;
     margin-bottom: 0;
+    @mixin atMedium {
+      font-size: 40px;
+      font-weight: 200;
+      margin-top: 50px;
+      line-height: 44px;
+    }
 
     &--t-margin-small {
       margin-top: 25px;
       padding-bottom: 60px;
+      @mixin atMedium {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
   &::after {

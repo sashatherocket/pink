@@ -1,6 +1,11 @@
   .features {
     background-color: $mainGray;
     text-align: center;
+    @mixin atMedium {
+      text-align: left;
+      height: 431px;
+      position: relative;
+    }
     &__item {
       &__title {
         font-weight: 700;
@@ -9,6 +14,9 @@
         &--first {
           margin: 0;
           padding-top: 53px;
+          @mixin atMedium {
+            padding-top: 20px;
+          }
         }
       }
       &__text {
@@ -21,6 +29,14 @@
         &--b-padding {
           padding-bottom: 43px;
         }
+        @mixin atMedium {
+          margin: 9px 0;
+          width: 329px;
+        }
+      }
+      @mixin atMedium {
+        float: right;
+        width: 331px;
       }
     }
     &::after {
@@ -30,5 +46,13 @@
       background-image: url("img/iphone-screen-mobile@1x.png");
       background-repeat: no-repeat;
       background-position: 50% 0;
+      @mixin atMedium {
+        background-image: url("img/iphone-screen-3-tablet@1x.png");
+        width: 300px;
+        position: absolute;
+        left: 4px;
+        top: -50px;
+        height: 481px;
+      }
     }
   }
