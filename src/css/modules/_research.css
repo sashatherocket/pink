@@ -24,7 +24,7 @@
   }
   @mixin atMedium {
     display: block;
-    height: 410px;
+    height: 433px;
     background-image: url(img/research-bgr.svg);
     background-repeat: no-repeat;
     background-size: 43% 67%;

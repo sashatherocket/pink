@@ -1,17 +1,22 @@
 .testimonials-slider {
   height: 377px;
   position: relative;
+  @mixin atMedium {
+    height: 306px;
+  }
   &__slides {
     height: 293px;
     position: relative;
     background-color: white;
     overflow: hidden;
+    @mixin atMedium {
+      height: 216px;
+    }
     &__item {
       text-align: center;
       width: 100%;
       display: block;
       transition: right .7s linear, left .7s linear;
-
       &--left-in {
         position: absolute;
         top: 0;
@@ -42,6 +47,22 @@
         font-weight: 700;
         font-size: 18px;
         margin-top: 45px;
+        @mixin atMedium {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 82px;
+        }
+        &__desc {
+          display: none;
+          @mixin atMedium {
+            display: block;
+            font-size: 20px;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 8px;
+          }
+        }
       }
       &__text {
         margin-left: auto;
@@ -50,6 +71,11 @@
         width: 280px;
         margin-top: 17px;
         line-height: 30px;
+        @mixin atMedium {
+          font-size: 18px;
+          width: 100%;
+          margin-top: 0;
+        }
       }
     }
   }
