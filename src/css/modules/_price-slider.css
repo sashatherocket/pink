@@ -6,26 +6,65 @@
   background-color: $mainGray;
   position: relative;
   overflow: hidden;
+  @mixin atMedium {
+    height: 257px;
+  }
   &__content {
     width: 255%;
     margin: 0 auto;
     position: relative;
     left: -77%;
     transition: left .7s linear;
+    @mixin atMedium {
+      width: 630px;
+      height: 100%;
+      margin: 0 auto;
+      position: static;
+      transition: none;
+    }
+    &__options {
+      display: none;
+      @mixin atMedium {
+        display: block;
+        width: 155px;
+        float:left;
+        margin-top: 75px;
+        margin-right: 2px;
+      }
+      &__item {
+        height: 45px;
+        background-color: white;
+        border-bottom: 3px solid $mainGray;
+        width: 155px;
+        line-height: 45px;
+        text-align: center;
+      }
+    }
     &__item {
       text-transform: uppercase;
       width: 32.9%;
       display: inline-block;
+      @mixin atMedium {
+        width: 155px;
+        display: block;
+        float: left;
+        margin-right: 2px;
+      }
       &__header {
         color: white;
         background-color: $mainBlue;
         height: 98px;
         text-align: center;
-
+        @mixin atMedium {
+          height: 75px;
+        }
         &__title {
           padding-top: 20px;
           font-weight: 700;
           font-size: 17px;
+          @mixin atMedium {
+            padding-top: 10px;
+          }
         }
         &__cost {
           padding-top: 3px;
@@ -36,9 +75,12 @@
         height: 59px;
         background-image: url(img/icon-included.svg);
         background-repeat: no-repeat;
-        background-position: 90% 50%;
+        background-position: 50% 50%;
         background-color: white;
         border-bottom: 3px solid $mainGray;
+        @mixin atMedium {
+          height: 45px;
+        }
         &--not-included {
           background-image: url(img/icon-not-included.svg);
         }
@@ -46,6 +88,9 @@
           margin-left: 20px;
           line-height: 60px;
           font-size: 14px;
+          @mixin atMedium {
+            display: none;
+          }
         }
       }
     }
@@ -58,7 +103,9 @@
     top: 382px;
     left: 50%;
     transform: translateX(-50%);
-
+    @mixin atMedium {
+      display: none;
+    }
     &__item {
       width: 6px;
       height: 6px;
@@ -77,9 +124,6 @@
       &:nth-child(3) {
         left: 100%;
       }
-      /* &:hover {
-        background-color: $mainBlue;
-      } */
       &--active {
         border-radius: 50%;
         border: 3px solid black;

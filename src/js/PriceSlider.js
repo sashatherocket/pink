@@ -1,12 +1,14 @@
 import $ from "jquery";
 class PriceSlider {
   constructor() {
-    this.bullet1 = $("#price-slider__bullet-1");
-    this.bullet2 = $("#price-slider__bullet-2");
-    this.bullet3 = $("#price-slider__bullet-3");
-    this.sliderContent = $(".price-slider__content");
-    this.currentSlide = 1;
-    this.events();
+    if ($(window).width < 660) {
+      this.bullet1 = $("#price-slider__bullet-1");
+      this.bullet2 = $("#price-slider__bullet-2");
+      this.bullet3 = $("#price-slider__bullet-3");
+      this.sliderContent = $(".price-slider__content");
+      this.currentSlide = 1;
+      this.events();
+    }
   }
   events() {
     this.bullet1.click(this.showSlide1.bind(this));
