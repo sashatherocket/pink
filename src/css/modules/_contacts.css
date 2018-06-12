@@ -8,7 +8,11 @@
     margin-top: 38px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    @mixin atMedium {
+      font-size: 40px;
+      width: 475px;
+    }
   }
   &__item {
     &__title {
@@ -24,6 +28,17 @@
       width: 296px;
       margin-left: auto;
       margin-right: auto;
+    }
+    &--left {
+      float: left;
+    }
+    &--right {
+      float: right;
+    }
+    @mixin atMedium {
+      &:last-child {
+        margin-top: 123px;
+      }
     }
   }
 }
