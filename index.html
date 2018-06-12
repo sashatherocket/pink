@@ -10,7 +10,10 @@
 <body>
   <header class="site-header">
     <div class="site-header__title">
-      <img class="site-header__title__logo" src="img/logo-pink-white-mobile.svg">
+      <picture>
+        <source srcset="img/logo-pink-white-tablet.svg" media="(min-width:660px)">
+        <img class="site-header__title__logo" srcset="img/logo-pink-white-mobile.svg">
+      </picture>
       <div class="site-header__title__menu-icon">
         <div class="site-header__title__menu-icon__middle"></div>
       </div>
@@ -33,9 +36,15 @@
     </nav>
   </header>
   <div class="intro">
-    <img class="intro__image" src="img/iphone-hand-mobile@1x.png">
+    <picture>
+      <source srcset="img/iphone-hand-tablet@1x.png" media="(min-width:660px)">
+      <img class="intro__image" srcset="img/iphone-hand-mobile@1x.png">
+    </picture>
   </div>
   <div class="mobile-app">
+    <div class="mobile-app__title">
+      Взгляните на жизнь иначе!
+    </div>
     <div class="mobile-app__download">
       <a class="btn">Скачать приложение</a>
     </div>
@@ -83,11 +92,29 @@
       </div>
     </div>
   </div>
+  <div class="research">
+    <div class="research__content">
+      <div class="research__content__title">
+        Эффект<br>
+        на 24 часа!
+      </div>
+      <div class="research__content__text">
+        Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится<br>
+        целые сутки!
+      </div>
+      <a class="research__content__link" href="#">
+        Узнать больше об исследовании
+      </a>
+    </div>
+  </div>
   <div class="testimonials-slider">
     <div class="testimonials-slider__slides">
       <div class="testimonials-slider__slides__item testimonials-slider__slides__item--left-in"  id="slide-1">
         <div class="testimonials-slider__slides__item__title">
           Николай Петров
+          <div class="testimonials-slider__slides__item__title__desc">
+            25 лет, водитель трамвая
+          </div>
         </div>
         <div class="testimonials-slider__slides__item__text">
           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
@@ -97,6 +124,9 @@
       <div class="testimonials-slider__slides__item testimonials-slider__slides__item--right-out"  id="slide-2">
         <div class="testimonials-slider__slides__item__title">
           Саня
+          <div class="testimonials-slider__slides__item__title__desc">
+            25 лет, водитель трамвая
+          </div>
         </div>
         <div class="testimonials-slider__slides__item__text">
           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
@@ -106,6 +136,9 @@
       <div class="testimonials-slider__slides__item testimonials-slider__slides__item--right-out"   id="slide-3">
         <div class="testimonials-slider__slides__item__title">
           Гусь Породистый
+          <div class="testimonials-slider__slides__item__title__desc">
+            25 лет, водитель трамвая
+          </div>
         </div>
         <div class="testimonials-slider__slides__item__text">
           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
@@ -121,6 +154,17 @@
   </div>
   <div class="price-slider">
     <div class="price-slider__content">
+      <div class="price-slider__content__options">
+        <div class="price-slider__content__options__item">
+          Розовый фильтр
+        </div>
+        <div class="price-slider__content__options__item">
+          Смайлики
+        </div>
+        <div class="price-slider__content__options__item">
+          Комментарии
+        </div>
+      </div>
       <div class="price-slider__content__item" id="price-slide__slide-1">
         <div class="price-slider__content__item__header">
           <div class="price-slider__content__item__header__title">
@@ -207,7 +251,7 @@
     <div class="contacts__title">
       Остались вопросы? Свяжитесь с нами!
     </div>
-    <div class="contacts__item">
+    <div class="contacts__item contacts__item--left">
       <div class="contacts__item__title">
         Звоните:
       </div>
@@ -215,7 +259,7 @@
         +7 (934) 746-45-78
       </p>
     </div>
-    <div class="contacts__item">
+    <div class="contacts__item contacts__item--right">
       <div class="contacts__item__title">
         Пишите:
       </div>
